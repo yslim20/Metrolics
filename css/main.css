@@ -169,6 +169,70 @@ textarea {
   clear: both;
 }
 
+.theme_first_color {
+  color: #25c389;
+}
+
+.theme_first_bgcolor {
+  background-color: #25c389;
+}
+
+.theme_first_color_border{
+  border: 0.1rem solid #25c389;
+}
+
+.theme_second_color {
+  color: #feb902;
+}
+
+.theme_second_bgcolor {
+  background-color: #ffb901;
+}
+
+.theme_second_color_border{
+  border: 0.1rem solid #ffb901;
+}
+
+.theme_third_color {
+  color: #e7615e;
+}
+
+.theme_third_bgcolor {
+  background-color: #de6262;
+}
+
+.theme_third_color_border{
+  border: 0.1rem solid #de6262;
+}
+
+.theme_forth_color {
+  color: #1fa8d4;
+}
+
+.theme_forth_bgcolor {
+  background-color: #1691bd;
+}
+
+.theme_forth_color_border{
+  border: 0.1rem solid #1691bd;
+}
+
+.theme_fifth_bgcolor {
+  background-color: #166ba2;
+}
+
+.theme_fifth_color_border{
+  border: 0.1rem solid #166ba2;
+}
+
+.theme_sixth_bgcolor {
+  background-color: #862d99;
+}
+
+.overlay_color {
+  background-color: #19b2de;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
