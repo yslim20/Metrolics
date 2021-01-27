@@ -169,6 +169,7 @@ textarea {
   clear: both;
 }
 
+/* THEME COLORS 
 .theme_first_color {
   color: #25c389;
 }
@@ -232,6 +233,8 @@ textarea {
 .overlay_color {
   background-color: #19b2de;
 }
+
+/* THEME COLORS ENDS */
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
