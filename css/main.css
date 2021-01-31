@@ -13,8 +13,9 @@
 
 html {
   color: #222;
-  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Ubuntu', 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
+  font-weight: light;
   line-height: 1.4;
 }
 
@@ -89,7 +90,41 @@ img {
 }
 
 h1 {
-  color: #000;
+  color: #3b3b3b;
+  font-weight: 300;
+  font-size: 2.125rem;
+}
+
+h2, h3, h4, p {
+  color: #494949;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 1.56rem;
+  margin-bottom: 0.25rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 0.93rem;
+  color: white;
+}
+
+.sub__tit {
+  font-weight: 400;
+  font-size: 0.68rem;
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.625rem;
 }
 
 
@@ -224,7 +259,7 @@ div, section, footer, header {
 
 
 /* ==========================================================================
-   THEME
+   STYLE
    ========================================================================== */
 
 .page__slider{
@@ -279,7 +314,8 @@ div, section, footer, header {
 /* SLIDER STARTS */
 .page__slider {
   width: 100vw;
-  background-color: #ebebeb;     
+  background-color: #ebebeb;  
+  margin-bottom: 3rem;   
 }
 
 .page__slider__container {
@@ -290,6 +326,38 @@ div, section, footer, header {
 .page__slider__container > a{
   display: block;
 } /*slider ends*/
+
+/* PAGE CONTENTS START */
+
+/* page intro */
+.txt_style_color {
+  color: #1eafde;
+}
+
+.about__icon {
+  width: 30%; height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.about__txt {
+  text-align: center;
+  padding: 0 2rem;  
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+  word-wrap: break-all;   
+  line-height: 1.2rem;
+  height: 6rem; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+} /* about ends here */
+
+/* PROJECT SECTION STARTS */
+
+
+
 
 
 
@@ -374,6 +442,12 @@ div, section, footer, header {
 .clearfix::after {
   clear: both;
 }
+
+
+/* ==========================================================================
+   THEME
+   ========================================================================== */
+
 
 /* THEME COLORS */
 .theme_first_color {
