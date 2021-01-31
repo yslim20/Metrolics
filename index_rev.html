@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  
 </head>
 
 <body class="page page-home">
@@ -29,92 +32,54 @@
   <!-- HEADER STARTS -->
 
   <!-- PAGE HEADER STARTS -->
-  <header class="page_header">
-    <div class="row">
-      <h1 class="header_logo">
-        <a href ="index.html">
-          Metrolics
+  <header class="page__header">
+    <div class="row m-col-6">
+      <div class="column header__logo__container">
+        <a href="index.html" title="go to home page">
+          <h1 class="header_logo">
+            <img src="img/logo.png" alt="logo"/>     
+          </h1>
         </a>
-      </h1>
-  
-      <nav class="page_nav">
-        <ul class="page_nav_list">  
-          <li>
-            <a class="theme_first_bgcolor" href="index.html" title="go to home">
-              <div class="nav_icon"></div>
-              Home
-              <div class="nav_icon_arrow">&rsaquo;</div>
-            </a>
-          </li>
-          <li>
-            <a class="theme_second_bgcolor" href="page.html" title="go to page">
-              <div class="nav_icon"></div>
-              Page
-              <div class="nav_icon_arrow">&rsaquo;</div>
-            </a>
-          </li>
-          <li>
-            <a class="theme_third_bgcolor" href="blog.html" title="go to bl og">
-              <div class="nav_icon"></div>
-              Blog
-              <div class="nav_icon_arrow">&rsaquo;</div>
-            </a>
-          </li>
-          <li>
-            <a class="theme_forth_bgcolor" href="portfolio.html" title="go to portfolio">
-              <div class="nav_icon"></div>
-              Portfolio
-              <div class="nav_icon_arrow">&rsaquo;</div>
-            </a>
-          </li> 
-          <li>
-            <a class="theme_fifth_bgcolor" href="index.html" title="go to home">
-              <div class="nav_icon"></div>
-              Home
-              <div class="nav_icon_arrow">&rsaquo;</div>
-            </a>
-          </li> 
-        </ul>
-      </nav>
-    </div>
+      </div> <!--logo ends here-->
 
-    
+      <!-- NAVIGATION STARTS -->
+      <div class="column nav__list theme_first_bgcolor">
+        <span class="icon_style"><i class="fa fa-home fa-2x circle-icon"></i></span>            
+        <p class="icon__title">Home</p>
+      </div>
+      <div class="column nav__list theme_second_bgcolor">
+        <span class="icon_style"><i class="fas fa-sitemap fa-2x circle-icon"></i></span>            
+        <p class="icon__title">Page</p>
+      </div>
+      <div class="column nav__list theme_third_bgcolor">
+        <span class="icon_style"><i class="fas fa-bullhorn fa-2x circle-icon"></i></span>            
+        <p class="icon__title">Blog</p>
+      </div>
+      <div class="column nav__list theme_forth_bgcolor">
+        <span class="icon_style"><i class="fas fa-briefcase fa-2x circle-icon"></i></span>            
+        <p class="icon__title">Portfolio</p>
+      </div>
+      <div class="column nav__list theme_fifth_bgcolor">
+        <span class="icon_style"><i class="fa fa-home fa-2x circle-icon"></i></span>            
+        <p class="icon__title">Home</p>
+      </div> <!--navigation ends here-->      
+
+    </div>    
   </header><!--header ends-->
 
   <!-- SLIDER STARTS -->
-  <div class="slider">
-    <div class="row">
-      <!-- <div class="slider_container"> -->
-        <img src="img/placeholder.svg" width="1244" height="511" alt="slide"> <!--will be changed to backgorund-img-->
-        
-        <nav class="slider_nav">
-          <ul>
-            <li>
-              <a href="#" title="move left">left</a>
-            </li>
-            <li>
-              <a href="#" title="move right">right</a>            
-            </li>
-          </ul>        
-        </nav>
-  
-        <div class="slider_txt_container">
-          <p class ="slider_txt">Metro Style</p>
-          <p class ="slider_txt">Ratina Ready</p>
-          <p class ="slider_txt">Responsive Design</p>
-        </div>
-      <!-- </div> -->
-    </div>
-    
+  <div class="page__slider">
+    <div class="row page__slider__container">
+      <img src="img/slider.png" alt="slide"> <!--will be changed to backgorund-img-->
+    </div>    
   </div> <!--slider ends-->
 
   <!-- HOME PAGE INTRO STARTS -->
-
-  <div class="page_intro">
+  <div class="page__intro">
     <div class="row">
       <h1 class="heading">
         Hey guys! This is the 
-        <span class="txt_style_one">Metrolics</span>theme.<br>
+        <span class="txt_style_one">Metrolics</span> theme.<br>
         It sports a responsive layout with a mobile layout.
       </h1>
     </div>    
@@ -123,224 +88,206 @@
 
   <!-- PAGE CONTENT STARTS -->
 
-<section class="about">
-  <div class="row l-col-4">
-    <div class="column span-full">
-      <h2 class="heading">Things we do!</h2>
-    </div>
-    <div class="column">
-      subheading
-    </div>
-    <div class="column">
-      subheading
-    </div>
-    <div class="column">
-      subheading
-    </div>
-    <div class="column">
-      subheading
-    </div>
-  </div>
-</section>
-
-  <!-- SERVICE SECTION STARTS -->
-  <section class="service">
-    <div class="row">
+  <section class="about">
+    <div class="row l-col-4">
+      <div class="column span-full">
+        <h2 class="heading">
+          Things that We Do
+        </h2>
+      </div>
       <div class="column">
-        <h2 class="heading">Things we do!</h2>        
+        <h3 class="heading">subheading</h3>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+      <div class="column">
+        <h3 class="heading">subheading</h3>
+      </div>
+    </div>
+  </section> <!--about ends here-->
+
+  <!-- PROJECT SECTION STARTS -->
+  <section class="projects--new">
+    <div class="row m-col-2 l-col-3">
+      <div class="column span-full">
+        <h2 class="heading">
+          What's Up Lately?
+        </h2>
+        <p class="subheading"></p>
+      </div>
+
+      <div class="column special-project">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project__caption">
+            <h3 class="heading">project title</h3>
+            <p>figcaption here</p>
+          </figcaption>
+        </figure>
+      </div> <!--project col ends here-->
+
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project__caption">
+            <h3 class="heading">project title</h3>
+            <p>figcaption here</p>
+          </figcaption>
+        </figure>
+      </div> <!--project col ends here-->
+
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project__caption">
+            <h3 class="heading">project title</h3>
+            <p>fgcaption here</p>
+          </figcaption>
+        </figure>
+      </div> <!--project col ends here-->
+    </div>
+  </section> <!--project-new ends here-->
+
+  <!-- LATEST PROJECT SECTION STARTS -->
+  <section class="projects">
+    <div class="row m-col-2 l-col-3">
+      <div class="column span-full">
+        <h2 class="heading">
+          Our Latest Projects
+        </h2>
       </div>
 
       <div class="column">
-        <h3 class="heading">subheading</h3>        
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project__caption">
+            <h3 class="heading">project title</h3>
+            <p>fgcaption here</p>
+          </figcaption>
+        </figure>
+      </div> <!--project col ends here-->
+
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project__caption">
+            <h3 class="heading">project title</h3>
+            <p>figcaption here</p>
+          </figcaption>
+        </figure>
+      </div> <!--project col ends here-->
+
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project__caption">
+            <h3 class="heading">project title</h3>
+            <p>figcaption here</p>
+          </figcaption>
+        </figure>
+      </div> <!--project col ends here-->
+
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project__caption">
+            <h3 class="heading">project title</h3>
+            <p>figcaption here</p>
+          </figcaption>
+        </figure>
+      </div> <!--project col ends here-->
+
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project__caption">
+            <h3 class="heading">project title</h3>
+            <p>figcaption here</p>
+          </figcaption>
+        </figure>
+      </div> <!--project col ends here-->
+
+      <div class="column">
+        <figure class="project">
+          <img src="img/placeholder.svg" alt="placeholder">
+          <figcaption class="project__caption">
+            <h3 class="heading">project title</h3>
+            <p>figcaption here</p>
+          </figcaption>
+        </figure>
+      </div> <!--project col ends here-->
+    </div>
+  </section> <!--latest project ends here-->
+
+  <section class="thingsofabove">
+    <div class="row l-col-2">
+      <div class="column span-full">
+        <h2 class="heading">
+          Thingsofabove
+        </h2> 
+      </div>
+
+      <div class="column">
+        <p>GUI element here</p>
+      </div>
+
+      <div class="column">
+        <p>GUI element here</p>
+      </div>    
+    </div>
+  </section> <!--thingsofabove ends here-->
+
+  <!-- SPONSOR STARTS -->
+  <div class="sponsor">
+    <div class="row m-col-5">
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
       </div>
       <div class="column">
-        <h3 class="heading">subheading</h3>        
+        <img src="img/placeholder.svg" alt="placeholder">
       </div>
       <div class="column">
-        <h3 class="heading">subheading</h3>        
+        <img src="img/placeholder.svg" alt="placeholder">
       </div>
       <div class="column">
-        <h3 class="heading">subheading</h3>        
+        <img src="img/placeholder.svg" alt="placeholder">
+      </div> 
+      <div class="column">
+        <img src="img/placeholder.svg" alt="placeholder">
       </div>
-    </div>  
-  </section>
-
-<!-- PROJECT SECTION STARTS -->
-<section class="projects--new">
-  <div class="row m-col-2 l-col-3">
-    <div class="column">
-      <h2 class="heading">
-
-      </h2>
     </div>
+    
+  </div> <!--sponsor ends here-->
 
-    <div class="column">
-      <figure class="project">
-        <img src="img/placeholder.svg" alt="placeholder">
-        <figcaption class="project__caption">
-          <h3 class="heading">project title</h3>
-          <p>figcaption here</p>
-        </figcaption>
-      </figure>
+  <footer class="page__footer">
+    <div class="row m-col-2 l-col-4">
+      <div class="page__footer__intro column span-full">
+        <h3 class="heading">
+          Pewee Herman Intro
+        </h3> 
+      </div>
+
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div>  
+
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div> 
+
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div> 
+
+      <div class="column">
+        <h4>footer subheading</h4>
+      </div> 
     </div>
-
-    <div class="column">
-      <figure class="project">
-        <img src="img/placeholder.svg" alt="placeholder">
-        <figcaption class="project__caption">
-          <h3 class="heading">project title</h3>
-          <p>figcaption here</p>
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="column">
-      <figure class="project">
-        <img src="img/placeholder.svg" alt="placeholder">
-        <figcaption class="project__caption">
-          <h3 class="heading">project title</h3>
-          <p>fgcaption here</p>
-        </figcaption>
-      </figure>
-    </div> <!--project col ends here-->
-  </div>
-</section> <!--project-new ends here-->
-
-<!-- LATEST PROJECT SECTION STARTS -->
-<section class="projects">
-  <div class="row m-col-2 l-col-3">
-    <div class="column">
-      <h2 class="heading">
-
-      </h2>
-    </div>
-
-    <div class="column">
-      <figure class="project">
-        <img src="img/placeholder.svg" alt="placeholder">
-        <figcaption class="project__caption">
-          <h3 class="heading">project title</h3>
-          <p>fgcaption here</p>
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="column">
-      <figure class="project">
-        <img src="img/placeholder.svg" alt="placeholder">
-        <figcaption class="project__caption">
-          <h3 class="heading">project title</h3>
-          <p>figcaption here</p>
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="column">
-      <figure class="project">
-        <img src="img/placeholder.svg" alt="placeholder">
-        <figcaption class="project__caption">
-          <h3 class="heading">project title</h3>
-          <p>figcaption here</p>
-        </figcaption>
-      </figure>
-    </div> 
-
-    <div class="column">
-      <figure class="project">
-        <img src="img/placeholder.svg" alt="placeholder">
-        <figcaption class="project__caption">
-          <h3 class="heading">project title</h3>
-          <p>figcaption here</p>
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="column">
-      <figure class="project">
-        <img src="img/placeholder.svg" alt="placeholder">
-        <figcaption class="project__caption">
-          <h3 class="heading">project title</h3>
-          <p>figcaption here</p>
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="column">
-      <figure class="project">
-        <img src="img/placeholder.svg" alt="placeholder">
-        <figcaption class="project__caption">
-          <h3 class="heading">project title</h3>
-          <p>figcaption here</p>
-        </figcaption>
-      </figure>
-    </div> <!--project col ends here-->
-  </div>
-</section> <!--project-latest ends here-->
-
-<section class="thingsofabove">
-  <div class="row l-col-2">
-    <div class="column">
-      <h2 class="heading">
-        Thingsofabove
-      </h2> 
-    </div>
-
-    <div class="column">
-      <p>GUI element here</p>
-    </div>
-    <div class="column">
-      <p>GUI element here</p>
-    </div>    
-  </div>
-</section> <!--thingsofabove ends here-->
-
-<!-- SPONSOR STARTS -->
-<div class="sponsor">
-  <div class="row m-col-5">
-    <div class="column">
-      <img src="img/placeholder.svg" alt="placeholder">
-    </div>
-    <div class="column">
-      <img src="img/placeholder.svg" alt="placeholder">
-    </div>
-    <div class="column">
-      <img src="img/placeholder.svg" alt="placeholder">
-    </div>
-    <div class="column">
-      <img src="img/placeholder.svg" alt="placeholder">
-    </div>      
-
-  </div>
-  
-</div> <!--sponsor ends here-->
-
-<footer class="page-footer">
-  <div class="row  m-col-2 l-col-4">
-    <div class="page__footer__intro column">
-      <h3 class="heading">
-        Pewee Herman Intro
-      </h3> 
-    </div>
-
-    <div class="column">
-      <h4>footer subheading</h4>
-    </div>  
-
-    <div class="column">
-      <h4>footer subheading</h4>
-    </div> 
-
-    <div class="column">
-      <h4>footer subheading</h4>
-    </div> 
-
-    <div class="column">
-      <h4>footer subheading</h4>
-    </div> 
-  </div>
-</footer> <!--footer ends here-->
-
-
+  </footer> <!--footer ends here-->
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
