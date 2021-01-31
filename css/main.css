@@ -116,7 +116,7 @@ h4 {
   color: white;
 }
 
-.sub__tit {
+.subheading {
   font-weight: 400;
   font-size: 0.68rem;
   text-align: center;
@@ -127,8 +127,9 @@ p {
   font-size: 0.625rem;
 }
 
-
-
+section, .sponsor {
+  margin-bottom: 2rem;
+}
 
 
 /* ==========================================================================
@@ -355,6 +356,78 @@ div, section, footer, header {
 } /* about ends here */
 
 /* PROJECT SECTION STARTS */
+figure {
+  position: relative;
+  top: 0; left: 0;
+}
+
+.date {
+  width: 20%; height: 25%;
+  color: white;
+  position: absolute;
+  top: 0; left: 0;
+  font-size: 0.875rem;   
+  text-align: center;
+  padding-top: 0.6rem;
+  box-sizing: border-box;
+}
+
+.date > span {
+  font-size: 0.625rem; 
+}
+
+figcaption {
+  width: 100%; height: 3rem;
+  position: absolute;
+  left: 0; bottom: 0;
+}
+
+.project__caption > h3{
+  text-align: left;
+  text-indent: 1rem;
+  line-height: 0.25rem;
+  color: white;
+}
+
+.project__caption > p{
+  text-align: left;
+  text-indent: 1rem;
+  line-height: 0.25rem;
+  color: white;
+}
+
+.icon_p_photo {
+  width: 2.125rem; 
+  display: block;
+  position: absolute;
+  right: 1.25rem; bottom: 0.5rem;
+} /* project-new ends here */
+
+/* LATEST PROJECT SECTION STARTS */
+.project__caption__late {
+  display: none;
+  width: 100%; height: 100%;
+}
+
+.project__caption__late > h3 {
+  position: absolute;
+  bottom: 1.125rem;
+}
+
+.project__caption__late > p {
+  position: absolute;
+  bottom: 0.15rem;
+}
+
+.project_hover:hover .project__caption__late{
+  display: block;
+} /* latest project ends here */
+
+/* THINGSOFABOVE STARTS */
+
+
+
+
 
 
 
@@ -512,6 +585,10 @@ div, section, footer, header {
 
 .overlay_color {
   background-color: #19b2de;
+}
+
+.overlay_color_a {
+  background-color: rgba(25, 178, 222, 0.8)
 }
 
 /* THEME COLORS ENDS */
