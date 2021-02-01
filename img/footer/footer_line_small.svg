@@ -1,0 +1,12 @@
+<svg id="line" xmlns="http://www.w3.org/2000/svg" width="293" height="7" viewBox="0 0 293 7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #de6262;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="upside_down_pyramid" data-name="upside down pyramid" class="cls-1" d="M180,5000h11l-6,6Z" transform="translate(-159 -4999)"/>
+  <path id="Line_1px" data-name="Line 1px" class="cls-1" d="M159,5000v-1H452v1H159Z" transform="translate(-159 -4999)"/>
+</svg>
