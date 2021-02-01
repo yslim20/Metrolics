@@ -378,7 +378,8 @@ section, .sponsor {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  .thingsofabove, .sponsor, .nav__list {
+  
+  .thingsofabove, .sponsor, .nav__list, .page__slider {
     display: none;
   }
   
@@ -398,9 +399,59 @@ section, .sponsor {
     max-height: 2rem; width: auto;
   }
 
+  .page__intro {
+    padding: 0 1rem;
+  }
+
   h1 {
     font-size: 1.875rem;
   }
+
+  /* THINGS THAT WE DO STARTS */
+
+  .about__flex {
+    display: flex;    
+  }
+   
+  .about{
+    margin-bottom: 1.5rem;
+  }
+
+  .about__icon {
+    width: 20%;
+    padding: 5% 0 0 3.75%;
+    box-sizing: border-box;
+  } 
+
+  .about__icon > img {
+    width: 100%; height: auto;
+    display: block;
+  }
+
+  .about__para {
+    width: 80%;
+  }
+
+  .about__para > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    word-wrap: break-all;   
+    line-height: 0.9rem;
+    height: 3.6rem; 
+    overflow: hidden;
+    text-align: left;;
+  }
+
+  .about__heading {
+    margin-bottom: 0;
+  }
+
+  .no_margin {
+    width: 100vw; 
+  }
+  /* things that we do ends here */
   
 
   
@@ -474,6 +525,52 @@ section, .sponsor {
     bottom: 1rem; left: 0;
     max-height: 2rem; width: 100%;
   }
+
+  /* THINGS THAT WE DO STARTS */
+
+  .about__flex {
+    display: static;    
+  }
+   
+  .about{
+    margin-bottom: 1.5rem;
+  }
+
+  .about__icon {
+    width: 20%;
+    padding: 5% 0 0 3.75%;
+    box-sizing: border-box;
+  } 
+
+  .about__icon > img {
+    width: 100%; height: auto;
+    display: block;
+  }
+
+  .about__para {
+    width: 100%;
+  }
+
+  .about__para > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    word-wrap: break-all;   
+    line-height: 0.9rem;
+    height: 3.6rem; 
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .about__heading {
+    margin-bottom: 0;
+  }
+
+  .no_margin {
+    width: 100vw; 
+  }
+  /* things that we do ends here */
   
 
   /* THINGSOFABOVE STARTS */
@@ -682,6 +779,7 @@ section, .sponsor {
   .l-col-6 {
     grid-template-columns: repeat(6, 1fr);
   }
+
 
   .things__p {
     padding-top: 1.75%;
