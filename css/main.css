@@ -166,6 +166,10 @@ section, .sponsor {
   .nav__list {
     text-align: center;
     padding: 0.5rem;  
+}
+
+  .icon_style {
+    width: 0.1rem;
   }
   
   .circle-icon {
@@ -339,10 +343,9 @@ div, section, footer, header {
 @media screen and (max-width: 39.9375em) {
   .thingsofabove, .sponsor {
     display: none;
-  }
+  } 
 
-
-
+  
 }
 
 /* Medium and up - tablet*/
@@ -379,10 +382,20 @@ div, section, footer, header {
     grid-template-columns: 1fr 2fr;
   }
 
+  .m-1-5 {
+    grid-template-columns: 1fr 5fr;
+  }
+
   .span-full {
     grid-column-start: 1;
     grid-column-end: -1;
-  }  
+  }
+
+  .col__l__hide {
+    display: block;
+  }
+  
+  
 
   /* THINGSOFABOVE STARTS */
   
@@ -517,6 +530,14 @@ div, section, footer, header {
     overflow: hidden;
   }
 
+  /* SPONSOR LISTS STARTS */  
+  .col__sponsor {       
+    margin: 0.7rem;
+  }  
+
+  .col__sponsor > img {
+    max-width: 100%;
+  }
 
 
 }
@@ -528,6 +549,7 @@ div, section, footer, header {
     grid-column-start: 1;
     grid-column-end: -1;
   }
+
 
   /* THINGSOFABOVE STARTS */
 
@@ -582,11 +604,16 @@ div, section, footer, header {
     padding-top: 1.75%;
   }
 
+  .col__l__hide {
+    display: none;
+  }
+  
+
 }
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
+  
 }
 
 
