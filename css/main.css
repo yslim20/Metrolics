@@ -136,19 +136,18 @@ section, .sponsor {
 /* ==========================================================================
    STYLE
    ========================================================================== */
+.page__header, .page__slider, .page__about,.projects--new, .page__projects, .thingsofabove, .sponsor, .page__footer {
+  width: 100vw;
+}
 
    .page__slider{
     background-color: #dcdcdc;
+    margin-bottom: 3rem; 
   }
   
   .page__footer{
     background-color: #16242f;
     padding-bottom: 3rem;
-  }
-
-  .page__header {
-    min-height: 7.125rem;
-    max-height: 7.125rem;
   }
 
   .header__nav__box {
@@ -210,15 +209,8 @@ section, .sponsor {
   /* header ends */
   
   /* SLIDER STARTS */
-  .page__slider {
-    width: 100vw;
-    background-color: #ebebeb;  
-    margin-bottom: 3rem;   
-  }
-  
   .page__slider__container {
     width: 100%; height: 100%;   
-    margin: 0 auto;
   }
   
   .page__slider__container > a{
@@ -318,16 +310,12 @@ section, .sponsor {
 
   .footer__bar {
     position: absolute;
-    right: 0; bottom: -3rem;
-    
-  }  
-  
-  
-  /* project-new ends here */
+    right: 0; bottom: -3rem;    
+  } /* project-new ends here */
   
   /* SECTION DIVIDER STARTS */
   .no_margin {
-    width: 85vw; height: 2rem;
+    width: 85%; height: 2rem;
     position: relative;
   }
   
@@ -367,7 +355,6 @@ section, .sponsor {
   /* FOOTER STARTS */
 
   .footer__intro {
-    /* max-height: 8.375rem; */
     padding: 2rem;
     margin-bottom: 1rem;
     box-sizing: border-box;
@@ -380,10 +367,15 @@ section, .sponsor {
     background-repeat: no-repeat;
     background-size: 4.25rem;
     text-indent: -9999rem;
-    float: left;
     margin-right: 2rem;
-  }   
- 
+    float: left;
+  }
+
+  .port__txt {
+    display: inline-block;
+    width: 80%;
+  }
+  
   .port__txt > h3 {
     text-align: left;
     color: white;
@@ -400,15 +392,11 @@ section, .sponsor {
     display: -webkit-box;
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
-    white-space: wrap;
+    white-space:wrap;
     word-wrap: break-all;   
     line-height: 1rem;
     height: 2rem; 
     overflow: hidden;
-    display: block;
-    width: 70%;
-    margin-right: 0;
-    box-sizing: border-box;
   }
 
   .f__section_divider {
@@ -429,25 +417,21 @@ section, .sponsor {
   }
 
   .aboutus__box {
-    width: 100vw; height: 2rem;
+    width: 100%; min-height: 2rem;
   }
 
   .aboutus__link {
     width: 100%; height: 2rem;
-    margin: 0 auto; 
   }
 
   .aboutus__link > ul {
     height: 100%;
-    margin: 0 auto; 
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .aboutus__link > ul > li {
     list-style: none;
-    display: block;
-    float: left;
-    margin-right: 0.25rem;    
+    display: inline-block;
   }
 
   .aboutus__link > ul > li:last-child {
@@ -489,7 +473,7 @@ section, .sponsor {
 
   .footer__row {
     display: grid;
-    width: 100vw; 
+    width: 100%; 
     max-width: 70rem;
     margin: 0 auto;
     margin-top: 0.625rem;    
@@ -507,12 +491,15 @@ section, .sponsor {
 
   /* RECENT TWEETS STARTS */
 
+  .tweet__box {
+    width: 100%;
+    display: flex;
+  }
+
   .tweet__icon {
-    width: 2rem;
+    width: 2rem; height: 2rem;
     display: block;
-    margin-top: 1.125rem;
-    margin-right: 1rem;
-    float: left;
+    margin: 1rem;
   }
 
   .tweets__txt {
@@ -578,24 +565,31 @@ section, .sponsor {
   .thingsofabove, .sponsor, .nav__list, .page__slider {
     display: none;
   }
+
+  .inline__block {
+    display: inline-block;
+  }  
   
   .header__nav__box, .header__logo__container {
-    position: static;  
-    width: 100%;
-    padding-top: 0;
+    width: 100%; min-height: 4.875rem;
+    box-sizing: border-box;
   }
 
-  .header__nav__box {    
+  .header__nav__box {
+    position: relative;
+  }
+
+  .header__logo__container {
     padding: 2rem;
   }
 
   .mobile__menu {
+    width: 2rem; height: 2rem;
     display: block;
+    position: absolute; top: 2rem; right: 2.75rem;    
   }
-
-  .header_logo > img {  
-    position: absolute;
-    left: 5%; top: 2.75rem;
+  
+  .header_logo > img {
     max-height: 2rem; width: auto;
   }
 
@@ -649,7 +643,7 @@ section, .sponsor {
   }
   
   .no_margin {
-    width: 100vw; 
+    width: 100%; 
   }  /* things that we do ends here */
 
   /* FOOTER STARTS */
@@ -657,9 +651,12 @@ section, .sponsor {
     display: none;
   }
 
+  .port__txt {
+    width: 60%;
+  }
+
   .portrait__txt {    
     height: 9rem; 
-    width: 60%;        
   }
 
   .aboutus__link {
@@ -670,17 +667,17 @@ section, .sponsor {
     width: 100vw;
   }
 
-  .port__txt > p {
-    display: inline-block;    
-  }
-
   .footer__bar {
     width: 100vw;
   }
 
-  
+  .aboutus__box {
+    display: inline-block;
+  }
 
-  
+  .aboutus__link > ul {
+    text-align: center;  
+  }
 
   
   
@@ -800,8 +797,7 @@ section, .sponsor {
 
   .no_margin {
     width: 100vw; 
-  }
-  /* things that we do ends here */
+  } /* things that we do ends here */
   
 
   /* THINGSOFABOVE STARTS */
@@ -950,6 +946,10 @@ section, .sponsor {
   }
 
   /* FOOTER STARTS */
+
+  .footer__m__off {
+    display: block;
+  }
 
 
 
