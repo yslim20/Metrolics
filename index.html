@@ -27,9 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
 
-  <!-- icon -->  
-  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-  
+ 
 </head>
 
 <body class="page page-home">
@@ -38,7 +36,12 @@
 
   <!-- PAGE HEADER STARTS -->
   <header class="page__header">
-    <div class="row m-col-6 header__nav__box">
+    <div class="row m-1-2 header__nav__box">
+
+      <nav class = "mobile-nav m-hide l-hide">
+        mobile menu       
+      </nav>
+
       <div class="column header__logo__container">
         <a href="index.html" title="go to home page">
           <h1 class="header_logo">
@@ -48,33 +51,14 @@
       </div> <!--logo ends here-->
 
       <!-- NAVIGATION STARTS -->
-      <div class="column nav__list theme_first_bgcolor">
-        <span class="icon_style"><i class="fa fa-home fa-1x circle-icon"></i></span>            
-        <p class="icon__title">Home</p>
-      </div>
-      <div class="column nav__list theme_second_bgcolor">
-        <span class="icon_style"><i class="fas fa-sitemap fa-1x circle-icon"></i></span>            
-        <p class="icon__title">Page</p>
-      </div>
-      <div class="column nav__list theme_third_bgcolor">
-        <span class="icon_style"><i class="fas fa-bullhorn fa-1x circle-icon"></i></span>            
-        <p class="icon__title">Blog</p>
-      </div>
-      <div class="column nav__list theme_forth_bgcolor">
-        <span class="icon_style"><i class="fas fa-briefcase fa-1x circle-icon"></i></span>            
-        <p class="icon__title">Portfolio</p>
-      </div>
-      <div class="column nav__list theme_fifth_bgcolor">
-        <span class="icon_style"><i class="fa fa-home fa-1x circle-icon"></i></span>            
-        <p class="icon__title">Home</p>
-      </div> <!--navigation ends here-->     
-      
-      <div class = "mobile__menu">
-        <span class="icon_style theme_forth_bgcolor square-icon">
-          <i class="fas fa-bars fa-1x"></i>
-        </span>        
-      </div>
 
+      <nav class="column main-nav s-hide s-show">
+        <a href="#" class="main-nav__item active">Home</a>
+        <a href="#" class="main-nav__item">Pages</a>
+        <a href="#" class="main-nav__item">Blog</a>
+        <a href="#" class="main-nav__item">Portfolio</a>
+        <a href="#" class="main-nav__item">Contact</a>
+      </nav>
     </div>    
   </header><!--header ends-->
 
