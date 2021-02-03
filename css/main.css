@@ -137,7 +137,7 @@ section, .sponsor {
    STYLE
    ========================================================================== */
 .page__header, .page__slider, .page__about,.projects--new, .page__projects, .thingsofabove, .sponsor, .page__footer {
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .page__slider{
@@ -151,19 +151,18 @@ section, .sponsor {
 }
 
 .header__nav__box {
-  width: 100%; height: 100%;
-  max-height: 7.125rem;
+  width: 100%; 
   position: relative;  
   top: 0; left: 0;
 }
   
 .header_logo {
-  width: 100%; height: 100%;  
-  margin: 0;
+  height: 100%;  width: 100%;
+  margin: 0;  
 }
 
 .header_logo > img {  
-  max-height: 2rem; width: auto;
+  max-height: 3rem; width: auto;
   display: block;
 }
 
@@ -186,12 +185,6 @@ section, .sponsor {
   text-align: center;
   vertical-align: middle;  
 }  
-
-.mobile__menu {
-  position: absolute;
-  top: 3rem; right: 5%;
-  display: none;
-}
 
 .square-icon {
   color: white;
@@ -545,13 +538,54 @@ button {
    LAYOUT
    ========================================================================== */
 
-/* .column {
-  background-color: rgb(253, 232, 205); 
-  margin: 1rem; 
+/*div, section, footer, header {
+
+}
+
+ .column {
+  /* position: relative; 
+}
+
+.row {
+  display: grid; row-gap: 1rem;
+  margin: 0 1rem 3rem 1rem;
 } */
 
 .heading {
   text-align: center;
+}
+
+.main-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav__item {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 1rem 1rem 1rem 100%;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  line-height: 4rem;
+  background-repeat: no-repeat;
+  background-position-x: 44%;
+  background-position-y: center;
+  background-size: 3.1rem, 1.7rem;
+}
+
+.main-nav__item::after{
+  content: ">";
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+}
+
+.main-nav__item.active::after{
+  content: "";
 }
 
 
@@ -563,30 +597,51 @@ button {
   }
 
   .inline__block {
-    display: inline-block;
+    display: inline-block;    
   }  
   
   .header__nav__box, .header__logo__container {
-    width: 100%; min-height: 4.875rem;
-    box-sizing: border-box;
+    width: 100%; height: 3rem;
+    margin-bottom: 1rem;
   }
 
   .header__nav__box {
     position: relative;
   }
 
-  .header__logo__container {
-    padding: 2rem;
+  .mobile-nav {
+    position: absolute;
+    right: 1rem; top: 0rem;
+    z-index: 10;
+    background-image: url(../img/icon/icon_bars.svg); 
+    background-repeat: no-repeat;
+    background-size: 1.8rem;
+    background-position: center center;
+    background-color: #2a6eeb;
+    font-size: 0rem;
+    padding: 1.5rem;
   }
 
-  .mobile__menu {
-    width: 2rem; height: 2rem;
-    display: block;
-    position: absolute; top: 2rem; right: 2.75rem;    
+  .header_logo {
+    position: relative;
   }
   
   .header_logo > img {
-    max-height: 2rem; width: auto;
+    position: absolute; bottom: 0rem; left: 1rem;
+  }
+
+  .s-hide {
+    display: none;
+  }
+
+  .s-show {
+    display: flex;
+  }
+
+  .main-nav__item::after{
+    display: inline-block;
+    position: static;
+   padding-left: 1rem;
   }
 
   .page__intro {
@@ -675,10 +730,6 @@ button {
     text-align: center;  
   }
 
-  
-  
-
-  
 }
 
 /* Medium and up - tablet*/
@@ -728,10 +779,13 @@ button {
     display: block;
   }
 
+  .m-hide {
+    display: none;
+  }
+
    
   .header__logo__container {    
     width: 90%; 
-    padding-top: 50%;
     box-sizing: border-box;
     position: relative;
     top:0; left: 0;
@@ -741,13 +795,35 @@ button {
     display: block;
     width: 100%; height: 100%; 
     max-height: 1rem;
-
   } 
+
+  .header_logo {
+    width: 100%; height: 100%;
+    margin: 0;
+  }
   
   .header_logo > img {  
     position: absolute;
-    bottom: 1rem; left: 0;
-    max-height: 2rem; width: 100%;
+    bottom: 1rem; 
+    max-height: 2.5rem;
+  }
+
+  /* medium and up main navigation */
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    padding: 4rem 1rem 0rem 0.5rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    text-align: left;
+    background-color: rgb(184,184,184);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 2.3rem, 1.4rem;
   }
 
   /* THINGS THAT WE DO STARTS */
@@ -1029,6 +1105,10 @@ button {
   .col__l__hide {
     display: none;
   }
+
+  .l-hide {
+    display: none;
+  }
   
 
   
@@ -1210,6 +1290,35 @@ button {
 }
 
 /* THEME COLORS ENDS */
+
+
+/* main nav colours & icons */
+.main-nav__item:nth-child(1) {
+  background-color: #25c389;
+  background-image: url("../img/icon/icon_ellipse.svg"), url("../img/icon/icon_home.svg");
+}
+
+.main-nav__item:nth-child(2) {
+  background-color: #ffb901;
+  background-image: url("../img/icon/icon_ellipse.svg"), url("../img/icon/icon_sitemap.svg");
+}
+
+.main-nav__item:nth-child(3) {
+  background-color: #de6262;
+  background-image: url("../img/icon/icon_ellipse.svg"), url("../img/icon/icon_bullhorn.svg");
+}
+
+.main-nav__item:nth-child(4) {
+  background-color: #1691bd;
+  background-image: url("../img/icon/icon_ellipse.svg"), url("../img/icon/icon_briefcase.svg");
+}
+
+.main-nav__item:nth-child(5) {
+  background-color: #166ba2;
+  background-image: url("../img/icon/icon_ellipse.svg"), url("../img/icon/icon_envelope.svg");
+}
+
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
