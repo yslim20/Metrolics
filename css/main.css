@@ -151,13 +151,12 @@ section, .sponsor {
 }
 
 .header__nav__box {
-  width: 100%; 
   position: relative;  
   top: 0; left: 0;
 }
   
 .header_logo {
-  height: 100%;  width: 100%;
+  height: 100%; 
   margin: 0;  
 }
 
@@ -201,7 +200,7 @@ section, .sponsor {
 
 /* SLIDER STARTS */
 .page__slider__container {
-  width: 100%; height: 100%;   
+  height: 100%;   
 }
 
 .page__slider__container > a{
@@ -216,9 +215,29 @@ section, .sponsor {
 }
 
 .about__icon {
-  width: 30%; height: auto;
-  display: block;
-  margin: 0 auto;
+  width: 5.25rem; height: 5.25rem;
+  background-image: url("../img/icon/icon_lightbulb.svg"); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 4rem 2.5rem;
+  border: solid 2px #FEB902;
+  margin: 1rem auto;  
+  text-indent: -999rem;
+} 
+
+.icon-img {
+  background-image: url("../img/icon/icon_image.svg"); 
+  border-color: #25c389;
+}
+
+.icon-cog {
+  background-image: url("../img/icon/icon_cogssvg.svg");  
+  border-color: #ef6370;
+}
+
+.icon-pencil {
+  background-image: url("../img/icon/icon_pencil.svg"); 
+  border-color: #1bb3da;
 }
 
 .about__txt {
@@ -242,7 +261,7 @@ figure {
 }
 
 .date {
-  width: 20%; height: 25%;
+  width: 25%; height: 25%;
   color: white;
   position: absolute;
   top: 0; left: 0;
@@ -353,11 +372,7 @@ figcaption {
 }
 
 .port__img {
-  width: 4.25rem; height: 4.25rem;
-  background-image: url("../img/footer/footer_portrait.png");
-  background-repeat: no-repeat;
-  background-size: 4.25rem;
-  text-indent: -9999rem;
+  width: 4.25rem; height: 4.25rem;  
   margin-right: 2rem;
   float: left;
 }
@@ -397,7 +412,6 @@ figcaption {
 }
 
 .footer__column {
-  width: 100%;
   padding: 1rem;
   box-sizing: border-box;
 }
@@ -408,11 +422,11 @@ figcaption {
 }
 
 .aboutus__box {
-  width: 100%; min-height: 2rem;
+  min-height: 2rem;
 }
 
 .aboutus__link {
-  width: 100%; height: 2rem;
+  height: 2rem;
 }
 
 .aboutus__link > ul {
@@ -435,7 +449,7 @@ figcaption {
   background-image: url("../img/footer/footer_button.png");
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: 162px 32px;
+  background-size: 10.125rem 2rem;
 }
 
 .aboutus__link > ul > li:nth-child(2) {
@@ -464,26 +478,27 @@ figcaption {
 
 .footer__row {
   display: grid;
-  width: 100%; 
   max-width: 70rem;
   margin: 0 auto;
   margin-top: 0.625rem;    
 }
 
+.flickr__img__row {
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
 .flickr__img__box {
   width: 4.25rem; height: 4.25rem;
-  margin: 0.5rem auto;
 }
 
 .flickr__img {
   display: block;
-  width: 100%; 
 } /* flickr ends here*/ 
 
 /* RECENT TWEETS STARTS */
 
 .tweet__box {
-  width: 100%;
   display: flex;
 }
 
@@ -640,6 +655,7 @@ button {
 
   .page__intro {
     padding: 0 1rem;
+    margin: 3rem 0;
   }
 
   h1 {
@@ -649,7 +665,9 @@ button {
   /* THINGS THAT WE DO STARTS */
 
   .about__flex {
-    display: flex;    
+    padding: 0 2rem;
+    display: flex; 
+    justify-content:space-between;   
   }
    
   .about{
@@ -657,18 +675,21 @@ button {
   }
 
   .about__icon {
-    width: 20%;
-    padding: 5% 0 0 3.75%;
-    box-sizing: border-box;
-  } 
-
-  .about__icon > img {
-    width: 100%; height: auto;
-    display: block;
+    width: 3.75rem; height: 3.75rem;
+    margin-right: 2rem;
+    background-size: 1.5rem 2rem;
+  }
+  
+  .about__heading {
+    text-align: left;
   }
 
   .about__para {
     width: 80%;
+  }
+
+  .about__txt {
+    padding: 0;
   }
 
   .about__para > p {
@@ -690,6 +711,11 @@ button {
   .no_margin {
     width: 100%; 
   }  /* things that we do ends here */
+
+  .date {
+    width: 4.875rem; height: 3.5rem;
+  }
+
 
   /* FOOTER STARTS */
   .footer__m__off {
@@ -789,12 +815,12 @@ button {
   
   .header__logo__container > a {
     display: block;
-    width: 100%; height: 100%; 
+    height: 100%; 
     max-height: 1rem;
   } 
 
   .header_logo {
-    width: 100%; height: 100%;
+    height: 100%;
     margin: 0;
   }
   
@@ -830,17 +856,6 @@ button {
    
   .about{
     margin-bottom: 1.5rem;
-  }
-
-  .about__icon {
-    width: 20%;
-    padding: 5% 0 0 3.75%;
-    box-sizing: border-box;
-  } 
-
-  .about__icon > img {
-    width: 100%; height: auto;
-    display: block;
   }
 
   .about__para {
@@ -880,7 +895,6 @@ button {
   }
   
   .things__tit {
-    width: 100%; 
     line-height: 2rem;
     border: solid 1px #e6e6e6;
     color: white;
@@ -1010,7 +1024,7 @@ button {
   }  
 
   .col__sponsor > img {
-    max-width: 100%;
+    display: block;
   }
 
   /* FOOTER STARTS */
@@ -1036,12 +1050,11 @@ button {
   /* THINGSOFABOVE STARTS */
 
   .col__tab{
-    width: 100%; max-height: none;
+    max-height: none;
     margin: 0;
   }
 
   .things__contain {
-    width: 100%;
     min-height: none;   
     margin-right: 0;
     margin-bottom: 2%;
